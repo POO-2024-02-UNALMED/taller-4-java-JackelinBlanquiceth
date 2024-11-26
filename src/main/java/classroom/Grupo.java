@@ -28,9 +28,9 @@ public class Grupo {
     }
 
     void cambiarEstudiante(Persona estudianteViejo, Persona estudianteNuevo) {
-        for (int i = 0; i < estudiantes.length; i++) {
-            if (estudiantes[i].getCedula() == estudianteViejo.getCedula()) {
-                estudiantes[i] = estudianteNuevo;
+        for (int i = 0; i < this.estudiantes.length; i++) {
+            if (this.estudiantes[i].getCedula() == estudianteViejo.getCedula()) {
+                this.estudiantes[i] = estudianteNuevo;
                 break;
             }
         }
@@ -38,8 +38,8 @@ public class Grupo {
     
     void cambiarEstudiante(int indice, Persona estudiante) {
        if (indice >= 0 ) {
-    	   if (indice < estudiantes.length ) {
-    		   estudiantes[indice] = estudiante;
+    	   if (indice < this.estudiantes.length ) {
+    		   this.estudiantes[indice] = estudiante;
     	   }
        }
     	   
