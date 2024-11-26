@@ -36,7 +36,7 @@ public class Grupo {
     }
     
     void cambiarEstudiante(int indice, Persona estudiante) {
-       if (indice > 0 ) {
+       if (indice >= 0 ) {
     	   if (indice < estudiantes.length ) {
     		   estudiantes[indice] = estudiante;
     	   }
