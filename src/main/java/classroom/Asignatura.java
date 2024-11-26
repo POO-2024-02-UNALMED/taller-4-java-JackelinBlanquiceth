@@ -12,9 +12,9 @@ public class Asignatura {
         this("Sin nombre",Tipo.FUNDAMENTACION);
     }
 
-    public Asignatura(short codigoInterno,Tipo tipo) {
-        this("Sin nombre", codigoInterno, 0,tipo);
-    }
+    //public Asignatura(short codigoInterno,Tipo tipo) {
+    //    this("Sin nombre", codigoInterno, 0,tipo);
+    //}
 
     public Asignatura(int codigoExterno,Tipo tipo) {
         this.codigoExterno = codigoExterno;
@@ -40,9 +40,9 @@ public class Asignatura {
         this.tipo = tipo;
     }
 
-    public void cambiarDatos(short codigoInterno) {
-        this.codigoInterno = codigoInterno;
-    }
+   // public void cambiarDatos(short codigoInterno) {
+   //     this.codigoInterno = codigoInterno;
+   // }
 
     public void cambiarDatos(int codigoExterno) {
         this.codigoExterno = codigoExterno;

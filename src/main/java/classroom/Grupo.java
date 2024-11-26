@@ -23,6 +23,7 @@ public class Grupo {
         this.asignatura = asignatura;
         this.codigo = codigo;
         this.horario = horario;
+        this.estudiantes = new Persona[cantidadEstudiantes];
         
     }
 
