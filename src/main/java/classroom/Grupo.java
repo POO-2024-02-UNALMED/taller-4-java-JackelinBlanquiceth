@@ -15,6 +15,7 @@ public class Grupo {
         this.asignatura = asignatura;
         this.codigo = codigo;
         this.horario = horario;
+        this.estudiantes = new Persona[cantidadEstudiantes];
     }
    
     public Grupo(int cantidadEstudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
@@ -36,12 +37,10 @@ public class Grupo {
     }
     
     void cambiarEstudiante(int indice, Persona estudiante) {
-       if (indice >= 0 ) {
-    	   if (indice < estudiantes.length ) {
+       if (indice >= 0 && indice < estudiantes.length ) 
     		   estudiantes[indice] = estudiante;
     	   }
        }
     	   
-              
-    }
-}
+           
+

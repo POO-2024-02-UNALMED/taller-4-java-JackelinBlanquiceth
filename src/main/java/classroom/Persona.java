@@ -13,7 +13,7 @@ public class Persona {
     public Persona(long cedula, String nombre) {
         this.cedula = cedula;
         this.nombre = nombre;
-        totalPersonas++;
+        Persona.totalPersonas++;
     }
     
     public Persona(String nombre, long cedula) {
@@ -22,34 +22,24 @@ public class Persona {
 
     public Persona(long cedula) {
         this.cedula = cedula;
-        totalPersonas++;
+        Persona.totalPersonas++;
     }
 
     public Persona(String nombre) {
     	this.cedula = 1;
         this.nombre = "";
-        totalPersonas++;
+        Persona.totalPersonas++;
     }
     
     public Persona() {
     	this.cedula = 0;
     	this.nombre = "";
-    	totalPersonas++;
+    	Persona.totalPersonas++;
     }
     
     public long getCedula() {
         return cedula;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    
-    public void setCedula(long cedula) {
-    	this.cedula = cedula;
-    }
+ 
 }
